@@ -49,6 +49,10 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+div {
+  padding-top: 0px;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -85,13 +89,72 @@ body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+    background: rgb(120, 120, 120);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(120, 120, 120)), to(rgb(65, 65, 65)));
+    background: -webkit-radial-gradient(rgb(120, 120, 120), rgb(65, 65, 65));
+    background:    -moz-radial-gradient(rgb(120, 120, 120), rgb(65, 65, 65));
+    background:     -ms-radial-gradient(rgb(120, 120, 120), rgb(65, 65, 65));
+    background:      -o-radial-gradient(rgb(120, 120, 120), rgb(65, 65, 65));
+    background:         radial-gradient(rgb(120, 120, 120), rgb(65, 65, 65));
+}
+
+.impress-on-slide_journey_start,
+.impress-on-slide_journey_01,
+.impress-on-slide_journey_02,
+.impress-on-slide_journey_03,
+.impress-on-slide_journey_06,
+.impress-on-slide_journey_07,
+.impress-on-slide_journey_09,
+.impress-on-slide_journey_11,
+.impress-on-slide_journey_14
+ {
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background: rgb(208, 184, 129);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(208, 184, 129)), to(rgb(65, 65, 40)));
+  background: -webkit-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:    -moz-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:     -ms-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:      -o-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:         radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+}
+.impress-on-slide_journey_04,
+.impress-on-slide_journey_08,
+.impress-on-slide_journey_12
+{
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background: rgb(208, 184, 129);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(208, 184, 129)), to(rgb(65, 65, 40)));
+  background: -webkit-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:    -moz-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:     -ms-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:      -o-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:         radial-gradient(rgb(27, 53, 71), rgb(0, 7, 22));
+}
+.impress-on-slide_journey_05,
+.impress-on-slide_journey_13,
+.impress-on-slide_journey_15
+{
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background: rgb(208, 184, 129);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(208, 184, 129)), to(rgb(65, 65, 40)));
+  background: -webkit-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:    -moz-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:     -ms-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:      -o-radial-gradient(rgb(208, 184, 129), rgb(65, 65, 40));
+  background:         radial-gradient(rgb(135, 171, 167), rgb(50, 73, 71));
+}
+.impress-on-slide_journey_10
+{
+  font-family: 'PT Sans', sans-serif;
+  min-height: 740px;
+
+  background: rgb(232, 232, 232);
 }
 
 /*
@@ -187,7 +250,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.01;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -207,11 +270,9 @@ a:focus {
     They cover everything what you see on first three steps of the demo.
 */
 .slide {
-    display: block;
-
     width: 900px;
     height: 700px;
-    padding: 40px 60px;
+    padding: 60px 60px;
 
     background-color: white;
     border: 1px solid rgba(0, 0, 0, .3);
@@ -232,7 +293,7 @@ a:focus {
     font-size: 50px;
     line-height: 72px;
 
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 .slide q strong {
@@ -296,7 +357,7 @@ a:focus {
 
 #big b {
     display: block;
-    font-size: 250px;
+    font-size: 160px;
     line-height: 250px;
 }
 
@@ -460,11 +521,11 @@ a:focus {
 }
 
 #its-in-3d .you {
-    -webkit-transform: translateZ(20px);
-    -moz-transform:    translateZ(20px);
-    -ms-transform:     translateZ(20px);
-    -o-transform:      translateZ(20px);
-    transform:         translateZ(20px);
+    -webkit-transform: translateZ(40px);
+    -moz-transform:    translateZ(40px);
+    -ms-transform:     translateZ(40px);
+    -o-transform:      translateZ(40px);
+    transform:         translateZ(40px);
 }
 
 #its-in-3d .noticed {
@@ -586,10 +647,11 @@ a:focus {
     bottom: 200px;
 
     background: rgba(0,0,0,0.5);
-    color: #EEE;
+    color: #ff9c5b;
+    text-shadow: 5px 5px 5px #000000;
     text-align: center;
-
-    font-size: 50px;
+    font-weight: 800;
+    font-size: 30px;
     padding: 20px;
 
     z-index: 100;
@@ -633,7 +695,7 @@ a:focus {
 /*
     ... and we will show it when the first step (with id 'bored') is active.
 */
-.impress-on-bored .hint {
+.impress-on-slide_start .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
@@ -654,11 +716,11 @@ a:focus {
         into its correct position and after that we fade it in with opacity
         transition.
     */
-    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-    -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-    transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+    -webkit-transition: opacity 1s 0.5s, -webkit-transform 0.5s 0.5s;
+    -moz-transition:    opacity 1s 0.5s,    -moz-transform 0.5s 0.5s;
+    -ms-transition:     opacity 1s 0.5s,     -ms-transform 0.5s 0.5s;
+    -o-transition:      opacity 1s 0.5s,      -o-transform 0.5s 0.5s;
+    transition:         opacity 1s 0.5s,         transform 0.5s 0.5s;
 }
 
 /*
